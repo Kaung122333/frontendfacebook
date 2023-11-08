@@ -1,0 +1,1222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    width: 100%;
+    max-height: 100vh;
+}
+
+.container {
+    background: #F0F2F5;
+    
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    box-shadow: -10px -61px 10000px 1px black;
+}
+
+
+.fb {
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+nav .item2 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+}
+
+nav .item2 input {
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: #F0F2F5;
+    color: #000000;
+    padding: 5px;
+    padding-left: 25px;
+}
+
+nav .item2 #s {
+    position: absolute;
+    left: 58px;
+    font-size: 12px;
+    color: #65676B;
+}
+
+nav .item4 {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    cursor: pointer;
+}
+        
+nav .item4 i {
+   
+    font-size: 25px;
+    width: 80px;
+    height: 40px;
+    margin: 0 20px;
+    padding-left: 25px;
+    padding-top: 7px;
+    border-radius: 6px;
+}
+
+nav .item4 i:hover {
+    background: #e0e0e1;
+}
+
+nav .item4 .line {
+    width: 80px;
+    height: 5px;
+    border-radius: 3px;
+    background: blue;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+nav .itemmenu {
+    display: flex;
+    margin-right: 20px;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+
+nav .itemmenu i {
+    width: 30px;
+    height: 30px;
+    padding-top: 6px;
+    padding-left: 7px;
+    border-radius: 50%;
+    background: #f0f2f5;
+    margin: 0 5px;
+}
+
+/* side part */
+
+.container1 {
+    max-width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: 140px;
+    padding: 35px 10px;
+}
+
+.container1 div {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    padding: 7px 8px ;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.container1 div .user {
+    font-size: 23px;
+    
+}
+
+.container1 div i {
+   font-size: 15px;
+}
+
+.container1 div p {
+    margin-left: 10px;
+}
+
+.container1 div:hover {
+    background: #e0e0e1;
+}
+
+#line {
+    padding: 0;
+    border-radius: 0px;
+    width: 100%;
+    height: 1px;
+    background: #65676B;
+}
+
+.short {
+    display: flex;
+    justify-content: space-between;
+}
+
+.short #y {
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+.short #b {
+    color: blue;
+}
+
+.container2 {
+    width: 550px;
+    max-height: 100vh;
+    /* background: red; */
+    overflow: scroll;
+    
+}
+
+.containerofcontainers {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 165px;
+}
+
+.story {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.story .story-card {
+    width: 130px;
+    height: 230px;
+    border-radius: 12px;
+    background: url(img/fa673bb808f465191ebadf23a2c4decc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    position: relative;
+}
+
+.story-card::after {
+    content: "";
+    width: 130px;
+    background: #ffffff;
+    height: 75px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.story-card::before {
+    content: 'Create Story';
+    position: absolute;
+    bottom: 5px;
+    color: #000000;
+    z-index: 1;
+    left: 25px;
+}
+
+.story {
+    position: relative;
+    max-width: 550px;
+    overflow: hidden;
+}
+
+.story i {
+    z-index: 3;
+    position: absolute;
+    bottom: 55px;
+    left: 50px;
+    background: #005eff;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    padding-left: 6px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.story .bg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    z-index: 2;
+    bottom: 50px;
+    left: 45px;
+}
+
+.story-cards {
+    width: 130px;
+    height: 230px;
+    background: url(img/bestfriend.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    border-radius: 12px;
+    margin-left: 8px;
+    position: relative;
+}
+
+.story-cards::after {
+    content: 'Suguru Geto';
+    color: #ffffff;
+    position: absolute;
+    bottom: 5px;
+    left: 17px;
+}
+
+.story-cards img {
+    width: 38px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 4px solid #005eff;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.s2 {
+    width: 130px;
+    height: 230px;
+    background: url(img/inumaki.jpg);
+    background-size: contain;
+    background-position: center;
+    margin-top: 10px;
+    border-radius: 12px;
+    margin-left: 8px;
+    position: relative;
+}
+
+.s2::after {
+    content: 'Inumaki Toge';
+    color: #ffffff;
+    position: absolute;
+    bottom: 5px;
+    left: 17px;
+}
+
+.s2 img {
+    width: 38px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 4px solid #005eff;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.story3 {
+    width: 130px;
+    height: 230px;
+    background: url(img/trio.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    border-radius: 12px;
+    margin-left: 8px;
+    position: relative;
+}
+
+.story3::after {
+    content: 'Fushiguro Megumi';
+    font-size: 14px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+
+.story3 img {
+    width: 38px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 4px solid #005eff;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.uploadpost {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    margin-top: 20px;
+    padding: 20px;
+    position: relative;
+    border-radius: 12px;
+}
+
+.uploadpost .linebreak {
+    position: absolute;
+    top: 80px;
+    width: 90%;
+    height: 2px;
+    background: #E7E9ED;
+}
+
+.imginn {
+    display: flex;
+    gap: 15px;
+}
+
+.uploadpost img {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.uploadpost input {
+    width: 100%;
+    padding: 20px;
+    height: 40px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background: #eceef1;
+}
+
+.itemm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.itemm div {
+    display: inline-flex;
+    margin-top: 50px;
+    
+}
+
+.itemm div i {
+    font-size: 20px;
+}
+
+.itemm div p {
+    font-size: 16px;
+    color: #818286;
+    font: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+}
+
+.post1 {
+    background: #ffffff;
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin-top: 10px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.post1 img {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.post1::after {
+    content: 'Choso Kamo';
+    position: absolute;
+    top: 15px;
+    left: 59px;
+    font-size: 18px;
+    
+}
+
+.post1::before {
+    content: '1hr •';
+    font-size: 14px;
+    position: absolute;
+    top: 35px;
+    left: 59px;
+    color: #cdcecf;
+}
+
+.post1 i {
+    position: absolute;
+    top: 37px;
+    left: 95px;
+    font-size: 13px;
+    color: #cdcecf;
+}
+
+.picture {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 82px;
+    background: url(img/chosoandhisbroyher.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.post1 p {
+    position: absolute;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 80px;
+    left: 12px;
+}
+
+.reations  {
+  display: flex;
+  position: absolute;
+  bottom: 80px;
+}
+
+.reations img {
+    width: 20px;
+    aspect-ratio: 1/1;
+}
+
+#haha {
+    position: relative;
+    left: 13px;
+    top: 32px;
+    z-index: 1;
+    width: 15px;
+}
+
+#heart {
+    position: relative;
+    top: 32px;
+    border: 3px solid rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.reations p {
+    position: relative;
+    top: 34px;
+    left: 16px;
+}
+
+.box {
+
+    display: flex;
+    position: absolute;
+    bottom: -33px;
+    color: #65676b;
+    gap: 149px;
+    left: 41px;
+
+}
+
+.box div {
+    cursor: pointer;
+}
+
+.linebreak2 {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    width: 500px;
+    height: 1px;
+    background: #E7E9ED;
+}
+
+.post1 .box .like {
+    position: relative;
+    left: -10px;
+    top: 52px;
+    font-size: 20px;
+}
+
+.post1 .box .comment {
+    position: relative;
+    left: -9px;
+    top: 54px;
+    font-size: 20px;
+}
+
+.post1 .box .share {
+    position: relative;
+    left: -7px;
+    top: 53px;
+    font-size: 20px;
+}
+/* post2 */
+.post2 {
+    background: #ffffff;
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin-top: 10px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.post2 img {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.post2::after {
+    content: 'Ryomen Sukuna';
+    position: absolute;
+    top: 15px;
+    left: 59px;
+    font-size: 18px;
+    
+}
+
+.post2::before {
+    content: '2hr •';
+    font-size: 14px;
+    position: absolute;
+    top: 35px;
+    left: 59px;
+    color: #cdcecf;
+}
+
+.post2 i {
+    position: absolute;
+    top: 37px;
+    left: 95px;
+    font-size: 13px;
+    color: #cdcecf;
+}
+
+.picture2 {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 82px;
+    background: url(img/sukuna.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.post2 p {
+    position: absolute;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 80px;
+    left: 12px;
+}
+
+.reations  {
+  display: flex;
+  position: absolute;
+  bottom: 80px;
+}
+
+.reations img {
+    width: 20px;
+    aspect-ratio: 1/1;
+}
+
+#like {
+    position: relative;
+    z-index: 1;
+    top: 32px;
+    left: 13px;
+    width: 15px;
+}
+
+#haha {
+    position: relative;
+    left: 13px;
+    top: 32px;
+    z-index: 1;
+    width: 20px;
+    border: 3px solid rgb(255, 255, 255);
+
+}
+
+#heart {
+    position: relative;
+    top: 32px;
+    border: 3px solid rgb(255, 255, 255);
+    z-index: 3;
+}
+
+.reations p {
+    position: relative;
+    top: 34px;
+    left: 16px;
+}
+
+.box {
+
+    display: flex;
+    position: absolute;
+    bottom: -33px;
+    color: #65676b;
+    gap: 149px;
+    left: 41px;
+
+}
+
+.box div {
+    cursor: pointer;
+}
+
+.linebreak2 {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    width: 500px;
+    height: 1px;
+    background: #E7E9ED;
+}
+
+.post2 .box .like {
+    position: relative;
+    left: -10px;
+    top: 52px;
+    font-size: 20px;
+}
+
+.post2 .box .comment {
+    position: relative;
+    left: -9px;
+    top: 54px;
+    font-size: 20px;
+}
+
+.post2 .box .share {
+    position: relative;
+    left: -7px;
+    top: 53px;
+    font-size: 20px;
+}
+
+/* post3 */
+.post3 {
+    background: #ffffff;
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin-top: 10px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.post3 img {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.post3::after {
+    content: 'Itadori Yuji';
+    position: absolute;
+    top: 15px;
+    left: 59px;
+    font-size: 18px;
+    
+}
+
+.post3::before {
+    content: '30min •';
+    font-size: 14px;
+    position: absolute;
+    top: 35px;
+    left: 59px;
+    color: #cdcecf;
+}
+
+.post3 i {
+    position: absolute;
+    top: 37px;
+    left: 110px;
+    font-size: 13px;
+    color: #cdcecf;
+}
+
+.picture3 {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 82px;
+    background: url(img/itadorifood.jpg), url(img/itadorisleep.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position:left, right -32px bottom 39px;
+    background-size: contain, 50%;
+    background-origin: border-box;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.post3 p {
+    position: absolute;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 80px;
+    left: 12px;
+}
+
+.reations  {
+  display: flex;
+  position: absolute;
+  bottom: 80px;
+}
+
+.reations img {
+    width: 20px;
+    aspect-ratio: 1/1;
+}
+
+#haha3 {
+    position: relative;
+    left: 13px;
+    top: 32px;
+    z-index: 1;
+    width: 15px;
+}
+
+#heart3 {
+    position: relative;
+    top: 32px;
+    border: 3px solid rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.reations p {
+    position: relative;
+    top: 34px;
+    left: 16px;
+}
+
+.box {
+
+    display: flex;
+    position: absolute;
+    bottom: -33px;
+    color: #65676b;
+    gap: 149px;
+    left: 41px;
+
+}
+
+.box div {
+    cursor: pointer;
+}
+
+.linebreak2 {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    width: 500px;
+    height: 1px;
+    background: #E7E9ED;
+}
+
+.post3 .box .like {
+    position: relative;
+    left: -10px;
+    top: 52px;
+    font-size: 20px;
+}
+
+.post3 .box .comment {
+    position: relative;
+    left: -9px;
+    top: 54px;
+    font-size: 20px;
+}
+
+.post3 .box .share {
+    position: relative;
+    left: -7px;
+    top: 53px;
+    font-size: 20px;
+}
+
+/* post4 */
+
+.post4 {
+    background: #ffffff;
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin-top: 10px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.post4 img {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.post4::after {
+    content: 'Gojo Satoru';
+    position: absolute;
+    top: 15px;
+    left: 59px;
+    font-size: 18px;
+    
+}
+
+.post4::before {
+    content: '6hr •';
+    font-size: 14px;
+    position: absolute;
+    top: 35px;
+    left: 59px;
+    color: #cdcecf;
+}
+
+.post4 i {
+    position: absolute;
+    top: 37px;
+    left: 95px;
+    font-size: 13px;
+    color: #cdcecf;
+}
+
+.picture4 {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 82px;
+    background: url(img/nanami.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-origin: border-box;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.post4 p {
+    position: absolute;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 80px;
+    left: 12px;
+}
+
+.reations  {
+  display: flex;
+  position: absolute;
+  bottom: 80px;
+}
+
+.reations img {
+    width: 20px;
+    aspect-ratio: 1/1;
+}
+
+#haha4 {
+    position: relative;
+    left: -2px;
+    top: 32px;
+    z-index: 3;
+    width: 20px;
+    border: 3px solid rgb(255, 255, 255);
+
+}
+
+#heart4 {
+    position: relative;
+    top: 32px;
+    left: 30px;
+    width: 15px;
+    z-index: 2;
+}
+
+.reations p {
+    position: relative;
+    top: 34px;
+    left: 16px;
+}
+
+.box {
+
+    display: flex;
+    position: absolute;
+    bottom: -33px;
+    color: #65676b;
+    gap: 149px;
+    left: 41px;
+
+}
+
+.box div {
+    cursor: pointer;
+}
+
+.linebreak2 {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    width: 500px;
+    height: 1px;
+    background: #E7E9ED;
+}
+
+.post4 .box .like {
+    position: relative;
+    left: -10px;
+    top: 52px;
+    font-size: 20px;
+}
+
+.post4 .box .comment {
+    position: relative;
+    left: -9px;
+    top: 54px;
+    font-size: 20px;
+}
+
+.post4 .box .share {
+    position: relative;
+    left: -7px;
+    top: 53px;
+    font-size: 20px;
+}
+
+/* post5 */
+
+.post5 {
+    background: #ffffff;
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin-top: 10px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.post5 img {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.post5::after {
+    content: 'mr spoiler';
+    position: absolute;
+    top: 15px;
+    left: 59px;
+    font-size: 18px;
+    
+}
+
+.post5::before {
+    content: '1 day ago •';
+    font-size: 14px;
+    position: absolute;
+    top: 35px;
+    left: 59px;
+    color: #cdcecf;
+}
+
+.post5 i {
+    position: absolute;
+    top: 37px;
+    left: 130px;
+    font-size: 13px;
+    color: #cdcecf;
+}
+
+.picture5 {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 82px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.picture5 video {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.post5 p {
+    position: absolute;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 80px;
+    left: 12px;
+}
+
+.reations  {
+  display: flex;
+  position: absolute;
+  bottom: 80px;
+}
+
+.reations img {
+    width: 20px;
+    aspect-ratio: 1/1;
+}
+
+#haha5 {
+    position: relative;
+    left: 13px;
+    top: 32px;
+    z-index: 1;
+    width: 15px;
+}
+
+#heart5 {
+    position: relative;
+    top: 32px;
+    border: 3px solid rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.reations p {
+    position: relative;
+    top: 34px;
+    left: 16px;
+}
+
+.box {
+
+    display: flex;
+    position: absolute;
+    bottom: -33px;
+    color: #65676b;
+    gap: 149px;
+    left: 41px;
+
+}
+
+.box div {
+    cursor: pointer;
+}
+
+.linebreak2 {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    width: 500px;
+    height: 1px;
+    background: #E7E9ED;
+}
+
+.post5 .box .like {
+    position: relative;
+    left: -10px;
+    top: 52px;
+    font-size: 20px;
+}
+
+.post5 .box .comment {
+    position: relative;
+    left: -9px;
+    top: 54px;
+    font-size: 20px;
+}
+
+.post5 .box .share {
+    position: relative;
+    left: -7px;
+    top: 53px;
+    font-size: 20px;
+}
+
+/* con3 */
+
+.container3 {
+    width: 300px;
+    max-height: 100vh;
+    overflow: scroll;
+    background: #f0f2f5;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+
+.container3 #nav2 {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.container3 #nav2 h4 {
+    font-size: 17px;
+    /* color: #c4c6cb; */
+    position: absolute;
+    top: 14px;
+    opacity: 0.7;    
+}
+
+.container3 #nav2 .search {
+    position: absolute;
+    /* color: #c4c6cb; */
+    right: 58px;
+    top: 19px;
+    opacity: 0.7;
+    cursor: pointer;
+
+}
+.container3 #nav2 .dots {
+    position: absolute;
+    /* color: #c4c6cb; */
+    right: 12px;
+    top: 19px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.friend {
+    display: flex;
+    margin-top: 15px;
+    position: relative;
+}
+
+.friend .friPhoto {
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.friend::after {
+    content: '';
+    width: 8px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: #31a24c;
+    position: absolute;
+    top: 31px;
+    left: 26px;
+    border: 2px solid #fff;
+}
+
+.friend .friName {
+    position: absolute;
+    font-size: 16.5px;
+    top: 10px;
+    left: 54px;
+}
+
+
+
+
+
+
+
+
